@@ -2,6 +2,8 @@
 
 Self-testing examples in your clojure code.
 
+[![Clojars Project](http://clojars.org/clj-by-example/latest-version.svg)](http://clojars.org/clj-by-example)
+
 ## Motivation
 
 The usual workflow for clojure code is to
