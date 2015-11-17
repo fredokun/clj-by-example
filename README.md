@@ -26,17 +26,19 @@ It is also a way to provide a lean support for literate
 The library provides two macros: `example` and `do-for-example`.
 
 -------------------------
-clj-by.example/example
-([expr sep val & {:keys [equiv?], :or {equiv? =}}])
-Macro
+
+    clj-by.example/example
+    ([expr sep val & {:keys [equiv?], :or {equiv? =}}])
+
   Show as an example the evaluation of `expr` as `val`.
   Evaluate the example as a test an throw an exception if it fails,
   if a variable `+examples-enabled+` is set and bound to a truthy value.
 
 -------------------------
-clj-by.example/do-for-example
-([& body])
-Macro
+
+    clj-by.example/do-for-example
+    ([& body])
+
   A `do`-like construct only compiled if a
 variable `+examples-enabled+` is bound in the current namespace.
 This is used to prepare examples with some variable or function
